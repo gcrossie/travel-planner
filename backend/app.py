@@ -39,3 +39,12 @@ def get_trip(trip_id: int):
         if trip["id"] == trip_id:
             return trip
     return {"error": "Trip not found"}
+
+@app.delete("/trips/{trip_id}")
+def delete_trip(trip_id: int):
+    for trip in trips:
+        if trip["id"] == trip_id:
+            trips.remove(trip)
+            return {"message": "Trip deleted"}
+    
+    return {"error": "Trip not found"}
