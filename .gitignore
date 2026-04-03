@@ -1,16 +1,12 @@
-# Python
 __pycache__/
 *.pyc
-
-# Databas
 *.db
 
-# Env
+node_modules/
+dist/
+
 .env
 venv/
 
-# Frontend (framtid)
-node_modules/
-
-# VS Code
 .vscode/
+.DS_Store
