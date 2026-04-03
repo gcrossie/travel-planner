@@ -1,8 +1,11 @@
 from pydantic import BaseModel
 
 class Trip(BaseModel):
-    destination: str
+    title: str
+    category: str
+    date: str
     status: str
+    notes: str
 
 class TripResponse(Trip):
     id: int

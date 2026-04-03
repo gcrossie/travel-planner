@@ -5,5 +5,8 @@ class TripModel(Base):
     __tablename__ = "trips"
 
     id = Column(Integer, primary_key=True, index=True)
-    destination = Column(String)
-    status = Column(String)
+    title = Column(String, nullable=False)
+    category = Column(String, nullable=False)
+    date = Column(String, nullable=False)
+    status = Column(String, nullable=False)
+    notes = Column(String, nullable=False)
