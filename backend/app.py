@@ -48,3 +48,13 @@ def delete_trip(trip_id: int):
             return {"message": "Trip deleted"}
     
     return {"error": "Trip not found"}
+
+@app.put("/trips/{trip_id}")
+def update_trip(trip_id: int, updated_trip: Trip):
+    for trip in trips:
+        if trip["id"] == trip_id:
+            trip["destination"] = updated_trip.destination
+            trip["status"] = updated_trip.status
+            return trip
+
+    return {"error": "Trip not found"}
