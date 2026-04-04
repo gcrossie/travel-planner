@@ -1,40 +1,39 @@
 # Travel Planner
-Gabriella Cross
 
-## Beskrivning
-Detta är en fullstack CRUD-applikation där användaren kan planera en resa genom att lägga till olika typer av aktiviteter såsom flights, hotels, activities, restaurants och hidden gems.
+## Description
+This is a fullstack CRUD application where users can plan trips by adding different types of items such as flights, hotels, activities, restaurants, and hidden gems.
 
-Applikationen låter användaren:
-- Skapa nya poster
-- Visa alla poster
-- Uppdatera poster
-- Ta bort poster
+The application allows users to:
+- Create new trips
+- View all trips
+- Update trips
+- Delete trips
 
-## Tech stack
+## Tech Stack
 - Backend: FastAPI
 - Frontend: React (Vite)
-- Databas: SQLite
+- Database: SQLite
 
-## Starta backend
+## Run the Backend
 cd backend  
 pip install -r requirements.txt  
 uvicorn app:app --reload  
 
-Backend körs på:  
+Backend runs on:  
 http://127.0.0.1:8000  
 
 API docs:  
 http://127.0.0.1:8000/docs  
 
-## Starta frontend
+## Run the Frontend
 cd frontend  
 npm install  
 npm run dev  
 
-Frontend körs på:  
+Frontend runs on:  
 http://localhost:5173  
 
-## Endpoints
+## API Endpoints
 - POST /trips  
 - GET /trips  
 - GET /trips/{id}  
